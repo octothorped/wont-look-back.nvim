@@ -2,7 +2,8 @@
 
 ## Introduction
 
-*This was originally a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) and credit goes to them for helping others get started in the neovim journey.
+*This was originally a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
+and credit goes to them for helping others get started in the neovim journey.
 
 ## Prequisites
 - This uses [mise](https://github.com/jdx/mise) for the installation of required tools and setup commands.
