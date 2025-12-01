@@ -5,7 +5,12 @@ return {
         opts = {
             explorer = { enabled = true },
             lazygit = { enabled = true },
-            terminal = { enabled = true },
+            terminal = {
+                enabled = true,
+                win = {
+                    position = "float",
+                },
+            },
             picker = {
                 enabled = true,
                 hidden = true,
@@ -78,5 +83,14 @@ return {
         "nvim-mini/mini.nvim",
         version = "*",
         config = function() require("mini.pairs").setup() end,
+    },
+    {
+        "romgrk/barbar.nvim",
+        dependencies = {
+            "lewis6991/gitsigns.nvim",
+            "nvim-tree/nvim-web-devicons",
+        },
+        init = function() vim.g.barbar_auto_setup = false end,
+        opts = {},
     },
 }

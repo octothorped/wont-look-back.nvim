@@ -34,6 +34,7 @@ return {
                 },
             },
             scroll = { enabled = true },
+            notifier = { enabled = true },
         },
     },
 }
