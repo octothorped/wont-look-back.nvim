@@ -9,6 +9,10 @@ return {
             picker = {
                 enabled = true,
                 hidden = true,
+                ignored = true,
+                exclude = {
+                    ".git",
+                },
                 sources = {
                     files = {
                         hidden = true,

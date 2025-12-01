@@ -6,6 +6,9 @@ return {
             ---@diagnostic disable-next-line: missing-fields
             require("catppuccin").setup({
                 auto_integrations = true,
+                custom_highlights = {
+                    SnacksPickerPathHidden = { link = "Normal" },
+                },
             })
             vim.cmd.colorscheme("catppuccin-mocha")
         end,
