@@ -2,10 +2,10 @@
 
 echo "Installing zsh"
 
-sudo pacman -S --noconfirm --needed zsh zsh-autocomplete zsh-syntax-highlighting
+sudo pacman -S --noconfirm --needed zsh zsh-syntax-highlighting zsh-autosuggestions
 
 cp -rf config/zsh/.zshrc $HOME/.zshrc
-mkdir $HOME/.config/zsh 
+mkdir -p $HOME/.config/zsh 
 cp -f config/zsh/.zsh-alias $HOME/.config/zsh/.zsh-alias
 
 echo "Completed installing zsh"

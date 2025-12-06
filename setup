@@ -6,6 +6,13 @@ if [ -n "$DEV_ENV" ]; then
 	echo "Executing specific install $DEV_ENV"
 	./dev/$DEV_ENV
 	exit 0
+else
+	echo "Executing all installations in order"
+	./dev/tools
+	./dev/desktop
+	./dev/ghostty
+	./dev/zsh
+	./dev/neovim
 fi
 
 echo "Completed setup"
