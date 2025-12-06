@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+echo "Installing zsh"
+
+sudo pacman -S --noconfirm --needed zsh zsh-autocomplete zsh-syntax-highlighting
+
+cp -rf config/zsh/.zshrc $HOME/.zshrc
+mkdir $HOME/.config/zsh 
+cp -f config/zsh/.zsh-alias $HOME/.config/zsh/.zsh-alias
+
+echo "Completed installing zsh"
+
+echo "Installing starship"
+
+sudo pacman -S --noconfirm --needed starship
+cp -rf config/starship/starship.toml $HOME/.config/starship.toml
+
+chsh -s /bin/zsh
+echo "Completed installing starship"

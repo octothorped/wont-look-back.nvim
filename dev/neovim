@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo "Starting neovim installation"
+
+sudo pacman -S --noconfirm --needed neovim
+
+rm -rf $HOME/.config/nvim
+cp -r config/neovim $HOME/.config/nvim
+
+echo "Completed neovim installation"

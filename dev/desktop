@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+echo "Installing desktop environment"
+# font
+sudo pacman -S --noconfirm --needed ttf-jetbrains-mono-nerd
+
+# basic tools
+sudo pacman -S --noconfirm --needed btop bluetui impala fastfetch firefox
+
+sudo pacman -S --noconfirm --needed greetd greetd-tuigreet
+mkdir -p /etc/greetd
+cp -f config/greetd/config.toml /etc/greetd/config.toml
+
+sudo pacman -S --noconfirm --needed xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper
+rm -rf $HOME/.config/hypr
+cp -r config/hypr $HOME/.config
+rm -rf $HOME/.config/wallpaper
+cp -r config/wallpaper $HOME/.config
+
+sudo pacman -S --noconfirm --needed xg mako rofi waybar
+rm -rf $HOME/.config/rofi
+cp -r config/rofi $HOME/.config
+rm -rf $HOME/.config/waybar
+cp -r config/waybar $HOME/.config
+
+# required for Mason
+sudo pacman -S --noconfirm --needed unzip
+
+echo "Completed install desktop environment"

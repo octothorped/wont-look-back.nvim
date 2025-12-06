@@ -1,0 +1,7 @@
+# neovim
+alias nv='nnvim'
+alias vim='nvim'
+
+# exa
+alias ls='exa'
+

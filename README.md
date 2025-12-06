@@ -1,23 +1,21 @@
-# dont-look-back.nvim
+# wont-look-back
 
 ## Introduction
+A repo to help me get from zero to dev more efficiently.
 
-*This was originally a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
-and credit goes to them for helping others get started in the neovim journey.
+Will hold all application configuration and installation scripts.
 
 ## Prequisites
-- This uses [mise](https://github.com/jdx/mise) for the installation of required tools and setup commands.
-For the most part mise supports both MacOS and Linux and is already part of majority of my workflows.
-- neovim (can't forget it although I considered adding it to mise install)
+Not really any but this has been built with pacman in mind.
 
 ## Install
+To blindly install everything run the below command.
 ```shell
-mise run setup
+./setup
 ```
 
-## Start
-Should be able to start neovim anywhere and everything will start to load.
+To run individually
 ```shell
-nvim
+DEV_ENV=<package> ./setup
 ```
 

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+echo "Installing tools"
+
+# nice cli stuff
+sudo pacman -S --noconfirm --needed ripgrep fzf eza
+
+# Git stuff
+sudo pacman -S --noconfirm --needed git github-cli lazygit
+git config --global user.email "24865872+octothorped@users.noreply.github.com"
+git config --global user.name "octothorped"
+
+# Docker
+sudo pacman -S --noconfirm --needed docker lazydocker
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+sudo usermod -aG docker $USER
+
+echo "Completed installing tools"

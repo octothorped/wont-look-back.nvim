@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "Installing ghostty"
+
+sudo pacman -S --noconfirm --needed ghostty
+mkdir -p $HOME/.config/ghostty
+cp -f config/ghostty/config $HOME/.config/ghostty/config
+
+echo "Completed installing ghostty"
