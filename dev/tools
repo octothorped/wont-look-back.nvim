@@ -3,7 +3,7 @@
 echo "Installing tools"
 
 # nice cli stuff
-sudo pacman -S --noconfirm --needed ripgrep fzf eza man
+sudo pacman -S --noconfirm --needed ripgrep fzf eza man jq yq
 
 # Git stuff
 sudo pacman -S --noconfirm --needed git github-cli lazygit
