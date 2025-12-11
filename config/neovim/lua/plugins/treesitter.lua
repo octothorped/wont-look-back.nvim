@@ -10,6 +10,7 @@ return {
                 "c",
                 "diff",
                 "html",
+                "css",
                 "lua",
                 "luadoc",
                 "markdown",
@@ -17,6 +18,10 @@ return {
                 "query",
                 "vim",
                 "vimdoc",
+                "vue",
+                "typescript",
+                "javascript",
+                "go",
             },
             -- Autoinstall languages that are not installed
             auto_install = true,

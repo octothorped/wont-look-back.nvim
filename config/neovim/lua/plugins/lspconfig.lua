@@ -176,6 +176,8 @@ return {
                 "dockerfile-language-server",
                 "docker-compose-language-service",
                 "terraform-ls",
+                "vuels",
+                "typescript-language-server",
             })
             require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
