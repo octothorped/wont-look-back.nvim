@@ -5,7 +5,7 @@ echo "Installing desktop environment"
 sudo pacman -S --noconfirm --needed ttf-jetbrains-mono-nerd
 
 # basic tools
-sudo pacman -S --noconfirm --needed btop bluetui impala fastfetch firefox
+sudo pacman -S --noconfirm --needed btop bluetui impala
 
 sudo pacman -S --noconfirm --needed greetd greetd-tuigreet
 mkdir -p /etc/greetd

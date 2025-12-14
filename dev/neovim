@@ -5,6 +5,7 @@ echo "Starting neovim installation"
 sudo pacman -S --noconfirm --needed neovim
 
 rm -rf $HOME/.config/nvim
-cp -r config/neovim $HOME/.config/nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
 
 echo "Completed neovim installation"

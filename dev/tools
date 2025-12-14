@@ -3,7 +3,13 @@
 echo "Installing tools"
 
 # nice cli stuff
-sudo pacman -S --noconfirm --needed xz ripgrep fzf eza man jq yq less
+sudo pacman -S --noconfirm --needed xz ripgrep fzf eza man jq yq less fastfetch unzip
+
+# just make sure the browser I want is still installed
+sudo pacman -S --noconfirm --needed firefox
+
+# nerd font
+sudo pacman -S --noconfirm --needed ttf-jetbrains-mono-nerd
 
 # Git stuff
 sudo pacman -S --noconfirm --needed git github-cli lazygit
